@@ -1,0 +1,153 @@
+/* Resetando estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Estilo para o título da página */
+h1 {
+    font-size: 2.5em;
+    color: #007bff; /* Aplicando a cor azul ao título */
+    margin-bottom: 20px;
+}
+
+/* Estilo para o formulário de pesquisa */
+.search-form {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    width: 70%;
+    max-width: 400px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-form input:focus {
+    border-color: #007bff; /* Aplicando a cor azul ao foco do campo */
+}
+
+.search-form button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007bff; /* Botão azul */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button:hover {
+    background-color: #0056b3; /* Alterando a cor ao passar o mouse */
+    transform: scale(1.05);
+}
+
+/* Estilo para a tabela de resultados */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+.data-table th {
+    background-color: #007bff; /* Aplicando a cor azul ao cabeçalho da tabela */
+    color: #fff;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para mensagens de "nenhum resultado encontrado" */
+.data-table td[colspan="3"] {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+}
+
+/* Estilo do link de logout */
+p a {
+    display: inline-block;
+    margin-top: 30px;
+    color: #007bff; /* Link azul */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #007bff; /* Borda azul */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+p a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+/* Estilo do link de logout como um botão */
+p a {
+    display: inline-block;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #007bff; /* Cor azul */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 12px 24px;
+    border-radius: 50px; /* Bordas arredondadas */
+    border: 2px solid #007bff; /* Borda azul */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+p a:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+    color: #fff; /* Mantém o texto branco ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do botão */
+}
+
+p a:focus {
+    outline: none; /* Remove o contorno ao focar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona sombra suave ao focar */
+}
